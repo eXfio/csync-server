@@ -2,8 +2,19 @@
   "name": "functions",
   "description": "Cloud Functions for Firebase",
   "dependencies": {
+    "crypto": "0.0.3",
     "firebase-admin": "~4.1.2",
-    "firebase-functions": "^0.5"
+    "firebase-functions": "^0.5",
+    "thirty-two": "^1.0.2"
   },
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "mocha": "^3.3.0",
+    "sinon": "^2.1.0"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  }
 }
